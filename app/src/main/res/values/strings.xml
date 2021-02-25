@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Yearbook</string>
+
+    <string name="banana">Banana</string>
+
     <string name="text">Me Working like...</string>
     <string name="picDesc">Quantum Computer</string>
 
     <string name="member1">Nick</string>
     <string name="member2">Danny</string>
     <string name="member3">John</string>
+
 </resources>
