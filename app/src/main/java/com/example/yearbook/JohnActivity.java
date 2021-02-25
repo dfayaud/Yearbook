@@ -20,7 +20,7 @@ public class JohnActivity extends AppCompatActivity {
     }
 
     public void switchDannyActivity(View view){
-        Intent intent = new Intent(this, JohnActivity.class);
+        Intent intent = new Intent(this, DannyActivity.class);
         startActivity(intent);
     }
 }
