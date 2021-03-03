@@ -28,4 +28,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, JohnActivity.class);
         startActivity(intent);
     }
+
+    public void switchShare (View view){
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
+        sendIntent.setType("text/plain");
+
+        Intent shareIntent = Intent.createChooser(sendIntent, null);
+        startActivity(shareIntent);
+    }
 }

@@ -11,19 +11,20 @@
         android:layout_height="wrap_content"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.449" />
+        app:layout_constraintVertical_bias="0.528"
+        android:textSize="15sp"
+        />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="367dp"
         android:layout_height="222dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:contentDescription="@string/banana"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -38,39 +39,61 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.748">
+        app:layout_constraintVertical_bias="0.748"
+        android:fontFamily="sans-serif-medium">
 
         <Button
             android:id="@+id/btn_nick"
-            android:layout_width="wrap_content"
+            android:layout_width="188dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-medium"
+            android:onClick="switchNickActivity"
             android:text="Nick"
             android:textAllCaps="false"
-            android:textSize="15sp"
-            android:onClick="switchNickActivity"/>
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/btn_danny"
-            android:layout_width="wrap_content"
+            android:layout_width="188dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:fontFamily="sans-serif-medium"
+            android:onClick="switchDannyActivity"
             android:text="Danny"
             android:textAllCaps="false"
-            android:textSize="15sp"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:onClick="switchDannyActivity"/>
+            android:textSize="15sp" />
+
     </LinearLayout>
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="15sp"
         android:text="John's Page"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btn_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="switchShare"
+        android:text="Share"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_marginBottom="40dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
