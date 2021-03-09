@@ -1,7 +1,7 @@
 # Yearbook
 
-Simple Android application with basic activities
+Simple Android application with basic activities\n\n
 
-WebView by Danny F.
-Push Notifications by Nick S.
-Sharing functionality by John D. 
+WebView by Danny F.\n
+Push Notifications by Nick S.\n
+Sharing functionality by John D.\n 
