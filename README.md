@@ -6,4 +6,4 @@ WebView by Danny F.
 
 Push Notifications by Nick S.
 
-Sharing functionality by John D. 
+Sharing functionality by John G. 
